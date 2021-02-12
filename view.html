@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>zadatak2</title>
+</head>
+<body>
+	<h2>Kalkulator</h2>
+	<form method="GET" action="/">
+
+		<label for="operacije">Izaberi operaciju</label>
+		<select id="operacije" name="operacija">
+			<option value="sabiranje">Sabiranje</option>
+			<option value="oduzimanje">Oduzimanje</option>
+			<option value="mnozenje">Mnozenje</option>
+			<option value="deljenje">Deljenje</option>
+		</select>
+
+		<br><br>
+
+		<label for="prviBroj">Prvi broj</label>
+		<input id="prviBroj" type="input" name="prviBroj">
+
+		<br><br>
+
+		<label for="drugiBroj">Drugi broj</label>
+		<input id="drugiBroj" type="input" name="drugiBroj">
+
+		<br><br>
+
+		<button type="submit">Izracunaj</button>
+
+		<h4>Rezultat: <?php echo $rezultat; ?></h4>
+	</form>
+</body>
+</html>
